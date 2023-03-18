@@ -17,6 +17,7 @@ const RegisterFields = () => {
         renderCount={renderCount}
         description="This method allows you to register an input or select element and apply validation rules to React Hook Form"
       />
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("firstName")} placeholder="First Name" />
         <input {...register("lastName")} placeholder="Last Name" />
