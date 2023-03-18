@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import "./App.scss";
+import RoutesApp from "./components/Routes/Routes.component";
+import Sidebar from "./components/Sidebar/Sidebar.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row className="App">
+      <Col xl={2}>
+        <Sidebar />
+      </Col>
+      <Col xl={10} className="container pt-2">
+        <RoutesApp />
+      </Col>
+    </Row>
   );
 }
-
 export default App;
