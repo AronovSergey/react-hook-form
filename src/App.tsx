@@ -7,10 +7,10 @@ import Sidebar from "./components/Sidebar/Sidebar.component";
 function App() {
   return (
     <Row className="App">
-      <Col xl={2}>
+      <Col md={2}>
         <Sidebar />
       </Col>
-      <Col xl={10} className="container pt-2">
+      <Col md={10} className="container pt-2">
         <RoutesApp />
       </Col>
     </Row>

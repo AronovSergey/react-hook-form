@@ -5,7 +5,7 @@ import { sidebarMenuItems } from "./Sidebar.data";
 const Sidebar = () => {
   return (
     <Nav
-      className="bg-light sidebar"
+      className="bg-light sidebar d-none d-md-block"
       style={{
         height: "100vh",
       }}

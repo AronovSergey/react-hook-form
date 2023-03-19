@@ -3,9 +3,10 @@ import React from "react";
 interface Props {
   renderCount?: number;
   description?: string;
+  note?: string;
 }
 
-const Header = ({ renderCount, description }: Props) => (
+const Header = ({ renderCount, description, note }: Props) => (
   <>
     <span className="counter">Render Count: {renderCount}</span>
     <h1 className="h1">
@@ -65,6 +66,12 @@ const Header = ({ renderCount, description }: Props) => (
       React Hook Form
     </h1>
     <p style={{ fontSize: 14, lineHeight: 1.3 }}>{description}</p>
+    {note && (
+      <div style={{ fontSize: 14, paddingBottom: "10px" }}>
+        <p className="d-inline">Note: </p>
+        <div className="d-inline">{note}</div>
+      </div>
+    )}
   </>
 );
 export default React.memo(Header);

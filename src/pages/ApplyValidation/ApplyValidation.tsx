@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 let renderCount = 0;
 
-const RegisterFields = () => {
+const ApplyValidation = () => {
   const { register, handleSubmit } = useForm();
 
   renderCount++;
@@ -15,7 +15,7 @@ const RegisterFields = () => {
     <div>
       <Header
         renderCount={renderCount}
-        description="This method allows you to register an input or select element and apply validation rules to React Hook Form"
+        description="React Hook Form makes form validation easy by aligning with the existing HTML standard for form validation."
       />
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -27,4 +27,4 @@ const RegisterFields = () => {
   );
 };
 
-export default RegisterFields;
+export default ApplyValidation;
