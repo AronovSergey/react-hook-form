@@ -1,11 +1,21 @@
 import React from "react";
-import Header from "../../components/Header/Header.component";
 import { useForm } from "react-hook-form";
+import Header from "../../components/Header/Header.component";
 
 let renderCount = 0;
 
-const ApplyValidation = () => {
-  const { register, handleSubmit } = useForm();
+interface FormValues {
+  firstName: string;
+  lastName: string;
+}
+
+const DefaultValues = () => {
+  const { register, handleSubmit } = useForm<FormValues>({
+    defaultValues: {
+      firstName: "Bill",
+      lastName: "Luo",
+    },
+  });
 
   renderCount++;
 
@@ -15,7 +25,7 @@ const ApplyValidation = () => {
     <div>
       <Header
         renderCount={renderCount}
-        description="React Hook Form makes form validation easy by aligning with the existing HTML standard for form validation."
+        description="Default values for the form."
       />
 
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -27,4 +37,4 @@ const ApplyValidation = () => {
   );
 };
 
-export default ApplyValidation;
+export default DefaultValues;
