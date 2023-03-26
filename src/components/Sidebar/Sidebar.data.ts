@@ -4,6 +4,7 @@ import DefaultValues from "../../pages/03_DefaultValues/DefaultValues";
 import SubscribeToInputChanges from "../../pages/04_SubscribeToInputChanges/SubscribeToInputChanges";
 import ValidateFunction from "../../pages/05_ValidateFunction/ValidateFunction";
 import ValueAs from "../../pages/06_ValueAs/ValueAs";
+import SubscribeCallback from "../../pages/07_SubscribeCallback/SubscribeCallback";
 
 export interface SidebarMenuItem {
   component: React.FC;
@@ -41,5 +42,10 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
     component: ValueAs,
     label: 'Value As',
     path: '/value-as',
+  },
+  {
+    component: SubscribeCallback,
+    label: 'Subscribe Callback',
+    path: '/subscribe-callback',
   }
 ];
