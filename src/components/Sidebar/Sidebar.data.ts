@@ -5,6 +5,8 @@ import SubscribeToInputChanges from "../../pages/04_SubscribeToInputChanges/Subs
 import ValidateFunction from "../../pages/05_ValidateFunction/ValidateFunction";
 import ValueAs from "../../pages/06_ValueAs/ValueAs";
 import SubscribeCallback from "../../pages/07_SubscribeCallback/SubscribeCallback";
+import FormState from "../../pages/08_FormState/FromState";
+import DisableSubmitNotValid from "../../pages/09_DisableSubmitNotValid/DisableSubmitNotValid";
 
 export interface SidebarMenuItem {
   component: React.FC;
@@ -47,5 +49,15 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
     component: SubscribeCallback,
     label: 'Subscribe Callback',
     path: '/subscribe-callback',
+  },
+  {
+    component: FormState,
+    label: 'Form State',
+    path: '/form-state',
+  },
+  {
+    component: DisableSubmitNotValid,
+    label: 'Disable Submit Not Valid',
+    path: '/disable-submit-not-valid',
   }
 ];
