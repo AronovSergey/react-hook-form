@@ -57,7 +57,7 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
   },
   {
     component: DisableSubmitNotValid,
-    label: 'Disable Submit Not Valid',
+    label: 'Disable Submit If Not Valid',
     path: '/disable-submit-not-valid',
   }
 ];
