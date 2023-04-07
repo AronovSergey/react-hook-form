@@ -7,6 +7,9 @@ import ValueAs from "../../pages/06_ValueAs/ValueAs";
 import SubscribeCallback from "../../pages/07_SubscribeCallback/SubscribeCallback";
 import FormState from "../../pages/08_FormState/FromState";
 import DisableSubmitNotValid from "../../pages/09_DisableSubmitNotValid/DisableSubmitNotValid";
+import SetValue from "../../pages/10_SetValue/SetValue";
+import Reset from "../../pages/11_Reset/Reset";
+import ResetOnSubmitSuccess from "../../pages/12_ResetOnSubmitSuccess/ResetOnSubmitSuccess";
 
 export interface SidebarMenuItem {
   component: React.FC;
@@ -59,5 +62,20 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
     component: DisableSubmitNotValid,
     label: 'Disable Submit If Not Valid',
     path: '/disable-submit-not-valid',
+  },
+  {
+    component: SetValue,
+    label: 'Set Value',
+    path: '/set-value',
+  }, 
+  {
+    component: Reset,
+    label: 'Reset',
+    path: '/reset',
+  },
+  {
+    component: ResetOnSubmitSuccess,
+    label: 'Reset On Submit Success',
+    path: '/reset-on-submit-success',
   }
 ];
