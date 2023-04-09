@@ -10,6 +10,8 @@ import DisableSubmitNotValid from "../../pages/09_DisableSubmitNotValid/DisableS
 import SetValue from "../../pages/10_SetValue/SetValue";
 import Reset from "../../pages/11_Reset/Reset";
 import ResetOnSubmitSuccess from "../../pages/12_ResetOnSubmitSuccess/ResetOnSubmitSuccess";
+import Trigger from "../../pages/13_Trigger/Trigger";
+import MultipleValidationError from "../../pages/14_MultipleValidationError/MultipleValidationError";
 
 export interface SidebarMenuItem {
   component: React.FC;
@@ -77,5 +79,15 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
     component: ResetOnSubmitSuccess,
     label: 'Reset On Submit Success',
     path: '/reset-on-submit-success',
+  },
+  {
+    component: Trigger,
+    label: 'Trigger',
+    path: '/trigger',
+  },
+  {
+    component: MultipleValidationError,
+    label: 'Multiple Validation Error',
+    path: '/multiple-validation-error',
   }
 ];
