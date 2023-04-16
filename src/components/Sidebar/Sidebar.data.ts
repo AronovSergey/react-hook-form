@@ -12,6 +12,7 @@ import Reset from "../../pages/11_Reset/Reset";
 import ResetOnSubmitSuccess from "../../pages/12_ResetOnSubmitSuccess/ResetOnSubmitSuccess";
 import Trigger from "../../pages/13_Trigger/Trigger";
 import MultipleValidationError from "../../pages/14_MultipleValidationError/MultipleValidationError";
+import HandleSubmit from "../../pages/15_HandleSubmit/HandleSubmit";
 
 export interface SidebarMenuItem {
   component: React.FC;
@@ -89,5 +90,10 @@ export const sidebarMenuItems: SidebarMenuItem[] = [
     component: MultipleValidationError,
     label: 'Multiple Validation Error',
     path: '/multiple-validation-error',
+  },
+  {
+    component: HandleSubmit,
+    label: 'Handle Submit',
+    path: '/handle-submit',
   }
 ];
